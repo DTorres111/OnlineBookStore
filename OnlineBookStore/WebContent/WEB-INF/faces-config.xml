@@ -4,5 +4,26 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_3.xsd"
     version="2.3">
+	<managed-bean>
+		<managed-bean-name>loginBean</managed-bean-name>
+		<managed-bean-class>model.LoginBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<navigation-rule>
+		<display-name>Welcome.xhtml</display-name>
+		<from-view-id>/Welcome.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>reset</from-outcome>
+			<to-view-id>/LoginPage.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>LoginPage.xhtml</display-name>
+		<from-view-id>/LoginPage.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>login</from-outcome>
+			<to-view-id>/Welcome.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
 
 </faces-config>

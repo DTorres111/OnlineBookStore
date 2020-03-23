@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15849249999790" configfile="/OnlineBookStore/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="Welcome.xhtml" x="139" y="97" id="pf15849251193951" outlinks="pf15849251193952" inlinks="pf15849251193953" path="/Welcome.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="LoginPage.xhtml" x="407" y="126" id="pf15849251193954" outlinks="pf15849251193953" inlinks="pf15849251193952" path="/LoginPage.xhtml"/>
+  <links id="pf15849251193952" target="pf15849251193954" source="pf15849251193951" outcome="reset"/>
+  <links id="pf15849251193953" target="pf15849251193951" source="pf15849251193954" outcome="login"/>
+</pageflow:Pageflow>
